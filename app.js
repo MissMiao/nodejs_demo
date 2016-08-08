@@ -1,14 +1,13 @@
 console.log("the app start");
-var a = 3;
-a = 5;
-a = "hello world";//a="hello world"
-var b = 3+5; //b=8
-var str = a + " hehe";//str = "hello world hehe"
 
-
-
-function f(v){
-   console.log(v);
+function a(){
+  return 10*10;
 }
-console.log("这是第13行");
-f(a);
+
+
+function f(){
+    return a();
+}
+
+
+console.log(f());
