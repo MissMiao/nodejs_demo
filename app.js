@@ -6,8 +6,8 @@ function a(){
 
 
 function f(){
-    return a();
+    return a;//返回的是function a;不是执行后的结果
 }
 
 
-console.log(f());
+console.log( (f())() );//f()立即执行得到a,(a)()立即执行a
